@@ -1,0 +1,244 @@
+<!-- Page Header Start -->
+<!-- <div class="container-fluid mb-5 full-width-image">
+    <div class="row border-top px-xl-5">
+        <div class="col-lg-12">
+            <h3 style=" font-family: Poppins;">Hair Care</h3><br>
+            <p>Embrace the beauty of your tresses with the care they deserve. Let your hair tell its own story.</p>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- Page Slider  -->
+<div class="container-fluid mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('assets/img/banner_images/hair_product_banner2.png');">
+                    <div class="infos">
+                        <h1>Hair Care</h1>
+                        <p>Embrace the beauty of your tresses with the care they deserve. Let your hair tell its own story.</p>
+                        <a href="" class="btn btn-light py-2 px-3" style="background-color: #000;color: #fff;border: 1px solid #000;">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/img/banner_images/hare_care_banner_image.png');">
+                    <div class="infos" style="background-color: rgba(255, 255, 255, 0.3) !important;">
+                        <h1>Hair Care</h1>
+                        <p>Embrace the beauty of your tresses with the care they deserve. Let your hair tell its own story.</p>
+                        <a href="" class="btn btn-light py-2 px-3" style="background-color: #000;color: #fff;border: 1px solid #000;">Shop Now</a>
+                    </div>
+                </div>
+                <!-- <div class="slide" style="background-image: url('assets/img/banner_images/hare_care_banner_image.png');">
+                    <div class="infos">
+                        <h1>Oral Care</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae unde autem</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/img/banner_images/hare_care_banner_image.png');">
+                    <div class="infos">
+                        <h1>Oral Care</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/img/banner_images/hare_care_banner_image.png');">
+                    <div class="infos">
+                        <h1>Oral Care</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('assets/img/banner_images/hare_care_banner_image.png');">
+                    <div class="infos">
+                        <h1>Oral Care</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae.</p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="eraser"></div>
+            <div class="buttons-container">
+                <button id="previous"><i class="fas fa-chevron-left"></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Header End -->
+
+
+<!-- Shop Start -->
+<div class="container pt-5">
+    <div class="row px-xl-5">
+        <!-- Shop Sidebar Start -->
+        <div class="col-lg-3 col-md-12">
+            <!-- Price Start -->
+            <div class="border-bottom mb-4 pb-4">
+                <h5 class="font-weight-semi-bold mb-4">Filter by price</h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" checked id="price-all">
+                        <label class="custom-control-label" for="price-all">All Price</label>
+                        <span class="badges border font-weight-normal">1000</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-1">
+                        <label class="custom-control-label" for="price-1">$0 - $100</label>
+                        <span class="badges border font-weight-normal">150</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-2">
+                        <label class="custom-control-label" for="price-2">$100 - $200</label>
+                        <span class="badges border font-weight-normal">295</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-3">
+                        <label class="custom-control-label" for="price-3">$200 - $300</label>
+                        <span class="badges border font-weight-normal">246</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="price-4">
+                        <label class="custom-control-label" for="price-4">$300 - $400</label>
+                        <span class="badges border font-weight-normal">145</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                        <input type="checkbox" class="custom-control-input" id="price-5">
+                        <label class="custom-control-label" for="price-5">$400 - $500</label>
+                        <span class="badges border font-weight-normal">168</span>
+                    </div>
+                </form>
+            </div>
+            <!-- Price End -->
+
+          
+
+            <!-- skin type -->
+            <div class="border-bottom mb-4 pb-4">
+                <h5 class="font-weight-semi-bold mb-4">Concern</h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <!-- checked -->
+                        <input type="checkbox" class="custom-control-input" id="skin-all"  (change)="filter('Dryness')"  >
+                        <label class="custom-control-label" for="skin-all">Dryness</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="skin-1"  (change)="filter('Hair Loss')" >
+                        <label class="custom-control-label" for="skin-1">Hair Loss</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                </form>
+            </div>
+
+
+         
+            <div class="border-bottom mb-4 pb-4">
+                <h5 class="font-weight-semi-bold mb-4">Hair Type</h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" checked id="hair-all" (change)="filter('')">
+                        <label class="custom-control-label" for="hair-all">All Hair Types</label>
+                        <span class="badges border font-weight-normal">14</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="hair-1" (change)="filter('Normal')">
+                        <label class="custom-control-label" for="hair-1">Normal</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="hair-2" (change)="filter('Curly')">
+                        <label class="custom-control-label" for="hair-2">Curly</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="border-bottom mb-4 pb-4">
+                <h5 class="font-weight-semi-bold mb-4">Formulation</h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Formulation-all"  (change)="filter('Gel')">
+                        <label class="custom-control-label" for="Formulation-all">Gel</label>
+                        <span class="badges border font-weight-normal">14</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Formulation-1"  (change)="filter('Wax')">
+                        <label class="custom-control-label" for="Formulation-1">Wax</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Formulation-2"  (change)="filter('Cream')">
+                        <label class="custom-control-label" for="Formulation-2">Cream</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Formulation-3"  (change)="filter('Pack')">
+                        <label class="custom-control-label" for="Formulation-3">Pack</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Formulation-4"  (change)="filter('Powder')">
+                        <label class="custom-control-label" for="Formulation-4">Powder</label>
+                        <span class="badges border font-weight-normal">6</span>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- skin type -->
+            <div class="border-bottom mb-4 pb-4">
+                <h5 class="font-weight-semi-bold mb-4">Conscious</h5>
+                <form>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input"  id="Conscious-all" (change)="filter('Clruelty Free')">
+                        <label class="custom-control-label" for="Conscious-all">Clruelty Free</label>
+                        <span class="badges border font-weight-normal">14</span>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                        <input type="checkbox" class="custom-control-input" id="Conscious-1" (change)="filter('Vegan')">
+                        <label class="custom-control-label" for="Conscious-1">Vegan</label>
+                        <span class="badges border font-weight-normal">4</span>
+                    </div>
+                </form>
+            </div>
+            <!-- Size End -->
+        </div>
+        <!-- Shop Sidebar End -->
+
+
+        <!-- Shop Product Start -->
+        <div class="col-lg-9 col-md-12 ">
+            <div class="row pb-3">
+              <app-hair-search></app-hair-search>
+
+                <!-- <ng-container *ngFor="let item of products"> -->
+                    <ng-container *ngFor="let item of filterCategory | filter:searcKey:'name'">
+                     
+                        <div class="col-lg-4 col-md-6 col-sm-12 pb-3">
+                       
+                        <li class="product">
+                        <a class="img-wrapper" routerLink="/hair-care-product-detail/{{item.id}}">
+                            <img src="{{item.imageUrl}}" alt="Blue running shoe" style="height: 100%;padding: 15px;" />
+                        </a>
+                        <div class="info pb-5">
+                            <div class="title"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.name}}</div>
+                            <div class="price">{{item.price | currency:'INR':'symbol-narrow':'4.2-2'}}</div>
+                        </div>
+                        <div class="actions-wrapper">
+                            <a routerLink="." (click)="addToWishlist(item)"  class="add-btn wishlist" [ngStyle]="{'color': isItemInWishlist(item) ? 'red' : ' '}">Wishlist</a>
+                            <!--[ngStyle]="{'color': isSelected ? 'red' : ' '}" -->
+                            <a routerLink="" (click)="addTocart(item)" class="add-btn cart">Cart</a>
+                        </div>
+                        <!-- {{item | json}} -->
+                        </li>
+                    
+                    </div>
+              
+                </ng-container>
+
+            </div>
+        </div>
+        <!-- Shop Product End -->
+    </div>
+</div>
+<!-- Shop End -->

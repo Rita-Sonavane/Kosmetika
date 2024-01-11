@@ -1,0 +1,50 @@
+<div class="container pt-5">
+    <div class="row px-xl-5">
+
+        <form class="form-1" [formGroup]="loginForm" (ngSubmit)="submit()">
+            <h1>Login</h1>
+
+            <label for="email">Email</label>
+            <input type="email" formControlName="email" />
+
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" />
+
+            <span style="color: #D19C97;">Forgot Password</span>
+            <button type="submit">Login</button>
+
+        
+
+            <!-- <p>Or SignUp Using</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://mail.google.com/" target="blank"><i class="fab fa-google"></i></a>
+            </div> -->
+        </form>
+    </div>
+</div>
+
+
+<!-- <div class="container pt-5">
+    <div class="details">
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <div class="input-container">
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" placeholder="Email" formControlName="email" />
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" formControlName="password" placeholder="password" />
+                </div>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</div> -->

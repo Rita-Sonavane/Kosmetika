@@ -1,0 +1,400 @@
+li{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .product
+  {
+  /* width: 240px; */
+   height: 100%;
+   position: relative;
+   }
+  
+  .product a
+  {
+  text-decoration: none;
+  
+  }
+  
+  .img-wrapper
+  {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #afafaf;
+  border-bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  }
+  
+  /* .img-wrapper img
+  {
+  height: 350px;
+  
+  } */
+  
+  .info
+  {
+  width: 100%;
+  background: #D19C97;
+  color: #fff;
+  position: relative;
+  padding: 40px 10px 20px 10px;
+  text-align: center;
+  
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  backface-visibility: hidden;
+  transition-property: color,height;
+  transition-duration: 0.3s,0.4s;
+  transition-timing-function: ease-out;
+  height: 83px;
+  }
+  
+  .info:before
+  {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition: transform 0.3s ease-out;
+  }
+  
+  .info:after
+  {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  left: calc(50% - 11px);
+  bottom: 0;
+  border-width: 10px 10px 0 10px;
+  border-color: #D19C97 transparent transparent transparent;
+  }
+  
+  .product:hover .info
+  {
+  height: 40px;
+  }
+  
+  .product:hover .info:before
+  {
+  transform: scaleY(0.7);
+  }
+  
+  .product:hover .info:after
+  {
+  visibility: visible;
+  transform: translateY(10px);
+  }
+  
+  .title
+  {
+  transition: transform 0.3s ease-out;
+  }
+  .title a
+  {
+  color: inherit;
+  }
+  .product:hover .title
+  {
+  transform: translateY(-18px);
+  font-weight: bold;
+  color: #000;
+  }
+  
+  .price
+  {
+  background: #e32d2c;
+  position: absolute;
+  font-size: 1.3em;
+  padding: 4px 13px;
+  top: -15px;
+  right: 10px;
+  }
+  
+  .price.sale
+  {
+  background: #17a2b8;
+  }
+  
+  .price.old
+  {
+  font-size: 0.95em;
+  padding: 4px 6px;
+  text-decoration: line-through;
+  top: -43px;
+  }
+  
+  .actions-wrapper
+  {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  }
+  
+  .actions-wrapper *
+  {
+  width: 50%;
+  padding: 2px 0;
+  text-align: center;
+  color: #191919;
+  font-size: 0.95em;
+  font-weight: bold;
+  }
+  .actions-wrapper *:before
+  {
+    font-family: Arial, 'Font Awesome 5 Free';
+  margin-right: 8px;
+  }
+  .wishlist
+  {
+  border-right: 1px solid #afafaf;
+  }
+  .wishlist:hover
+  {
+  color: #D19C97;
+  }
+  .wishlist:before
+  {
+  content: "\2764";
+  font-family: Arial, 'Font Awesome 5 Free';
+  }
+  
+  .cart:hover
+  {
+  color: #0a75b9;
+  }
+  .cart:before
+  {
+  content: "\f07a";
+  }
+  
+  .product:hover .actions-wrapper *
+  {
+  visibility: visible;
+  }
+  
+  .note
+  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 8px;
+  font-size: 0.9em;
+  }
+  
+  .note.on-sale
+  {
+  background: #17a2b8;
+  color: #fff;
+  }
+  
+  .note.no-stock
+  {
+  background: #191919;
+  color: #fff;
+  }
+  
+  /* Bnner */
+  
+  /* -------- =Structure -------*/
+  
+  
+  /* -------- =Column Layout -------*/
+  
+  .col-1 {
+    width: 8.33333333%;
+  }
+  .col-2 {
+    width: 16.66666667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-5 {
+    width: 41.66666667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 54.33%;
+  }
+  .col-8 {
+    width: 66.66666667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33333333%;
+  }
+  .col-11 {
+    width: 91.66666667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .row:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  
+  /* Banner */
+  
+  
+  a{
+    text-decoration: none;
+  }
+  
+  
+  title {
+  font-family: 'Raleway';
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  margin: 0;
+  z-index: 100;
+  }
+  
+  .slider {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  width: 100vw;
+  }
+  
+  .slide {
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  }
+  
+  .slide.active {
+  transform: translateX(-100%);
+  }
+  
+  .slide .infos {
+  
+  /* background-color: rgba(255, 255, 255, 0.7) !important; */
+  color: #333;
+  padding: 20px 15px;
+  position: absolute;
+  opacity: 0.1;
+  /* top: 200px;
+  left: 40px; */
+  top: 35%;
+  left: 10%;
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+  }
+  
+  .slide.active .infos{
+  opacity: 1;
+  transform: translateY(-40px);
+  transition: all 0.5s ease-in-out 0.8s;
+  }
+  
+  .slide .infos h1 {
+  font-family: 'Raleway';
+  margin: 10px 0;
+  }
+  
+  .slide .infos p {
+  font-family: 'Raleway';
+  letter-spacing: 1px;
+  }
+  
+  .eraser {
+  background: #f5f5f5;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.95;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  }
+  
+  .eraser.active {
+  transform: translateX(-100%);
+  }
+  
+  .buttons-container {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  /*   display: flex; */
+  
+  }
+  
+  .buttons-container button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin-right: 10px;
+  }
+  
+  .buttons-container button:hover {
+  background-color: #fff;
+  color: #A9A9A9;
+  opacity: 0.9;
+  }
+  
+  
+  @media (max-width: 400px) {
+  .slide .infos {
+  top: 100px;
+  left: 10px;
+  }
+  }

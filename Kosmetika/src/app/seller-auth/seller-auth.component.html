@@ -1,0 +1,114 @@
+ <!-- Page Header Start -->
+ <div *ngIf="!showLogin"  class="container-fluid mb-5" style="background-color: #EDF1FF;">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Admin SignUp</h1>
+        <div class="d-inline-flex">
+            <a href="index.html" style="text-decoration: none;"><p class="m-0" style="color: #D19C97;">Home</p></a>
+             <p class="m-0 px-2">-</p>
+            <p class="m-0">Admin SignUp</p> 
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!--Sign Up Area-->
+<div *ngIf="!showLogin" class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Seller Sign-Up</span></h2>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col-lg-4 mb-5">
+        </div>
+        <div class="col-lg-4 mb-5">
+            <div class="contact-form">
+                <div id="success"></div>
+                <form #sellerSignUp="ngForm" (ngSubmit)="signup(sellerSignUp.value)" name="sentMessage" novalidate="novalidate">
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" ngModel name="name" placeholder="Your Name"
+                            required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" ngModel name="email" placeholder="Your Email"
+                            required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="password" class="form-control" id="password" ngModel name="password" placeholder="Your Password"
+                            required="required" data-validation-required-message="Please enter a password" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <!-- <div class="control-group">
+                        <textarea class="form-control" rows="6" id="message" placeholder="Message"
+                            required="required"
+                            data-validation-required-message="Please enter your message"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div> -->
+                    <div>
+                        <button class="btn py-2 px-4" type="submit" id="sendMessageButton" style="background-color: #D19C97;">Sign
+                            Up</button>
+                            <p class="mb-md-0 text-center text-md-left text-dark">
+                              Already Have Account? Click to
+                                <a (click)="openSignIn()" style="color: #D19C97;cursor: pointer;">  Sign-In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+         <div class="col-lg-4 mb-5">
+        </div>
+       
+    </div>
+</div>
+
+
+<div *ngIf="showLogin" class="container-fluid mb-5" style="background-color: #EDF1FF;">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Admin SignIn</h1>
+        <div class="d-inline-flex">
+            <a href="index.html" style="text-decoration: none;"><p class="m-0" style="color: #D19C97;">Home</p></a>
+             <p class="m-0 px-2">-</p>
+            <p class="m-0">Admin SignIn</p> 
+        </div>
+    </div>
+</div>
+
+
+<!--Login Up Area-->
+<div *ngIf="showLogin" class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Seller Sign-In</span></h2>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col-lg-4 mb-5">
+        </div>
+        <div class="col-lg-4 mb-5">
+            <div class="contact-form">
+                <div id="success"></div>
+                <form #sellerSignIn="ngForm" (ngSubmit)="signin(sellerSignIn.value)" name="sentMessage" novalidate="novalidate">
+                    
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" ngModel name="email" placeholder="Your Email"
+                            required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="password" class="form-control" id="password" ngModel name="password" placeholder="Your Password"
+                            required="required" data-validation-required-message="Please enter a password" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                  
+                    <div>
+                        <button class="btn py-2 px-4" type="submit" id="sendMessageButton" style="background-color: #D19C97;">Sign
+                            In</button>
+                            <p class="mb-md-0 text-center text-md-left text-dark">
+                                Don't Have Account? Click to
+                                  <a (click)="openSignUp()" style="color: #D19C97;cursor: pointer;">  Sign-Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+         <div class="col-lg-4 mb-5">
+        </div>
+       
+    </div>
+</div>

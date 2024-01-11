@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="content">
+      <app-title title="Order Form" fontSize="1.6rem"></app-title>
+
+      <!-- <form [formGroup]="checkoutForm">
+        <text-input [control]="fc.fname" label="First Name"></text-input>
+        <text-input [control]="fc.lname" label="LastName"></text-input>
+        <text-input [control]="fc.address" label="Address"></text-input>
+      </form> -->
+
+      <form [formGroup]="checkoutForm"  (ngSubmit)="createOrder()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" formControlName="fname"/>
+
+        <label for="fname">Last Name</label>
+        <input type="text" id="lname" name="lname" formControlName="lname"/>
+
+        <label for="fname">Address</label>
+        <input type="text" id="address" name="address" formControlName="address"/>
+      </form>
+     
+      <app-order-items-list [order]="order"></app-order-items-list>
+    </div>
+    <div class="map">
+      <app-title
+      title="Choose Your Address On Map"
+      fontSize="1.6rem"></app-title>
+      <map [order]="order"></map>
+    </div>
+    <div class="buttons-container">
+      <div class="buttons" (click)="createOrder()">
+        <button >
+          Go To Payment
+        </button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,44 @@
+<app-title title="My Wishlist &nbsp;({{wishlistQuantity}} items)" class="mt-5" margin="1.5rem 0 0 2.5rem" style="font-family: Raleway;"></app-title>
+
+<!-- Shop Start -->
+<div class="container pt-5 mt-5">
+    <div class="row px-xl-5">
+       
+        <!-- Shop Product Start -->
+        <div class="col-lg-12 col-md-6 mt-5 mb-5">
+            <div class="row pb-3">
+                <!-- <app-hair-search></app-hair-search> -->
+
+                <!-- <ng-container *ngFor="let item of products"> -->
+                <ng-container>
+                    <!-- <a ruterLink="product-detail"> -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-3 mb-5" *ngFor="let wishlistItem of wishlist.items;">
+                        <a  routerLink="." (click)="getProductDetailRoute(wishlistItem)">
+                        <li class="product"  >
+                            <a class="img-wrapper">
+                                <img src="{{wishlistItem.product.imageUrl}}" alt="Blue running shoe" style="height: 100%;padding: 15px;" />
+                            </a>
+                            <div class="info pb-5">
+                                <div class="title"
+                                    style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{wishlistItem.product.name}}
+                                </div>
+                                <div class="price">{{wishlistItem.product.price | currency:'INR':'symbol-narrow':'4.2-2'}}</div>
+                            </div>
+                            <div class="actions-wrapper">
+                                <a routerLink="." (click)="removeFromWishlist(wishlistItem)" class="add-btn wishlist" [ngStyle]="{'color': wishlistItem.product.favorite ? 'red' : ' '}">Wishlist</a>
+                                <a routerLink="." (click)="addTocart(wishlistItem)" class="add-btn cart">Cart</a>
+                            </div>
+                            <!-- {{wishlistItem | json}} -->
+                        </li>
+                       </a>
+                    </div>
+                    <!-- </a> -->
+
+                </ng-container>
+
+            </div>
+        </div>
+        <!-- Shop Product End -->
+    </div>
+</div>
+<!-- Shop End -->

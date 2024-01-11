@@ -1,0 +1,77 @@
+<div class="container pt-5">
+  <div class="row px-xl-5">
+
+      <form class="form-1"  [formGroup]="registerForm" (ngSubmit)="submit()">
+          <h1>Register</h1>
+
+          <label for="fname">First Name</label>
+          <input type="text" formControlName="fname" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" formControlName="lname" />
+
+          <label for="email">Email</label>
+          <input type="email" formControlName="email" />
+
+          <label for="password">Password</label>
+          <input type="password" formControlName="password" />
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" formControlName="confirmPassword" />
+
+          <label for="address">Address</label>
+          <input type="text" formControlName="address" />
+
+          <!-- <span style="color: #D19C97;">Forgot Password</span> -->
+          <button type="submit">Register</button>
+
+          <!-- <div class="login">
+            Already a user? &nbsp;
+            <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
+              Login Here
+            </a>
+          </div> -->
+
+      </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container pt-5">
+    <div class="row px-xl-5">
+       
+        <div class="container-regi pt-5">
+        <div class="left">
+            <h1>Sign Up</h1>
+            <p>create a new account</p>
+            <form>
+              <label for="mobile">Mobile Number</label>
+              <input type="mobile" name="mobile" id="mobile" placeholder=" +91">
+              
+              <div class="accept">
+                <input type="checkbox" id="terms">
+                <label for="terms"> I agree to the <a href="#" style="color: red;"> Kosmetika's Terms of service </a>and <a style="color: red;" href="#">Privacy Policy.</a></label>
+              </div>
+                  
+              <input class="button" type="button" value="Sign Up">
+            </form>
+             
+          </div>
+          
+          <div class="right"></div>
+          </div>
+
+    </div>
+</div> -->
+
